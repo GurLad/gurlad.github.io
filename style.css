@@ -1,0 +1,126 @@
+@font-face {
+    font-family: DOK;
+    src: url('DiscOKey.ttf');
+}
+
+div {
+    font-family: DOK
+}
+
+.container {
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.85);
+}
+
+* {
+    font-size: 24px;
+}
+
+h1 {
+    font-weight: bold;
+    letter-spacing: 0.1em;
+}
+
+h2 {
+    font-weight: bold;
+    letter-spacing: 0.1em;
+}
+
+h3 {
+    font-weight: bold;
+    letter-spacing: 0.1em;
+}
+
+h4 {
+    font-weight: bold;
+    letter-spacing: 0.1em;
+}
+
+h5 {
+    font-weight: bold;
+    letter-spacing: 0.1em;
+}
+
+h6 {
+    font-weight: bold;
+    letter-spacing: 0.1em;
+}
+
+#caption {
+    font-weight: bold;
+    letter-spacing: 0.1em;
+    color: darkred;
+}
+
+nav {
+    border-radius: 20px;
+}
+
+.gameIcon {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+}
+
+li:hover {
+    background-color: #AFFDFE
+}
+
+.navbar {
+    background-color: #48EEF9;
+}
+
+.selectedPage {
+    background-color: #4999C9;
+}
+
+.homeTitle {
+    color: #367DA4;
+}
+
+.title {
+    color: #367DA4;
+}
+
+.siteTitle {
+    color: #193B4D;
+}
+
+#homeCollapse1.collapse:not(.show) {
+    display: block;
+    height: 3rem;
+    overflow: hidden;
+}
+
+#homeCollapse1.collapsing {
+    height: 3rem;
+}
+
+#homeCollapse2.collapse:not(.show) {
+    display: block;
+    height: 3rem;
+    overflow: hidden;
+}
+
+#homeCollapse2.collapsing {
+    height: 3rem;
+}
+
+#homeCollapse3.collapse:not(.show) {
+    display: block;
+    height: 3rem;
+    overflow: hidden;
+}
+
+#homeCollapse3.collapsing {
+    height: 3rem;
+}
+
+#readMore a.collapsed::after {
+    content: 'Read more...';
+}
+
+#readMore a:not(.collapsed)::after {
+    content: 'Collapse...';
+}
