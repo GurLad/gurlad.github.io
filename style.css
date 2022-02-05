@@ -99,12 +99,12 @@ li:hover {
 
 #homeCollapse2.collapse:not(.show) {
     display: block;
-    height: 3rem;
+    height: 0rem;
     overflow: hidden;
 }
 
 #homeCollapse2.collapsing {
-    height: 3rem;
+    height: 0rem;
 }
 
 #homeCollapse3.collapse:not(.show) {
