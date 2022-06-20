@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Project Climb Postmoterm</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</head>
+
+<body style="background-color:lavender">
+    <div class="container p-3 border" style="margin-bottom:20px;margin-top:20px;background-color:white;border-radius:20px;">
+        <div style="margin-left:5px;margin-top:5px;margin-right:5px">
+            <h1 id="project-climb-post-mortem"><a href="https://github.com/GurLad/ProjectClimb">Project Climb</a> Post-mortem</h1>
+            <br>
+            <h2 id="intro">Intro</h2>
+            <p>Project Climb was a challenge I&#39;ve set for myself: make a complete game, from scratch, using a new language &amp; framework, in one month. A complete history of my thoughts during the challenge is available on my <a href="https://raw.githubusercontent.com/GurLad/ProjectClimb/main/log.txt">log</a>: this post-mortem is basically a summary of it with videos.</p>
+            <hr>
+            <h2 id="week-1">Week 1 - Failing to make a physics engine</h2>
+            <p>This was my first time using Haxe, and my first time using an object-oriented language besides C#/Java/C++, so it was pretty disorienting at first. I wasted the first few days on making an entity-based physics engine when my game didn&#39;t need an entity-based physics engine. I removed that feature by the sixth day.
+                <div class="rounded-lg" style="position:relative;padding-top:56.25%;">
+                    <iframe class="rounded-lg" src="https://www.youtube.com/embed/ziNPoGFzOiQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>
+                </div>
+            </p>
+            <p><strong>Tip:</strong> Don&#39;t make features you don&#39;t need when under a time constraint.</p>
+            <p>I spent the rest of the week exploring LDtk and making stupid dependency mistakes. By the end of the first week, I had pretty much nothing besides a simple (copy-paste) LDtk renderer and a controllable cube. The future looked bleak.
+                <div class="rounded-lg" style="position:relative;padding-top:56.25%;">
+                    <iframe class="rounded-lg" src="https://www.youtube.com/embed/MtS06tJNt4c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>
+                </div>
+            </p>
+            <h2 id="week-2">Week 2 - Actually making a physics engine</h2>
+            <p>After removing most of the physics code from the previous week, I&#39;ve began working on implementing tilemap-based physics &amp; collisions. It took me most of the week to get that working, and it had a ton of bugs (there&#39;s actually a bug with knockback in the final release, but I made sure the enemies can&#39;t trigger it anymore. It was very annoying).
+                <div class="rounded-lg" style="position:relative;padding-top:56.25%;">
+                    <iframe class="rounded-lg" src="https://www.youtube.com/embed/Vz3y_CTDuuA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>
+                </div>
+            </p>
+            </p>
+            <p><strong>Tip:</strong> Don&#39;t make physics engines unless you hate yourself.</p>
+            <p>Besides the physics stuff, I&#39;ve begun working on animations &amp; gameplay that week. I&#39;ve added the snail enemies (which didn&#39;t do anything yet at that point) during the last day.
+                <div class="rounded-lg" style="position:relative;padding-top:56.25%;">
+                    <iframe class="rounded-lg" src="https://www.youtube.com/embed/Y0gjpq6vXAc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>
+                </div>
+            </p>
+            <h2 id="week-3">Week 3 - Adding basic gameplay</h2>
+            <p>During this week, I&#39;ve added most of the mechanics of the final game, like the spellcasting logic and all Fire spells, taking damage and multiplayer.
+                <div class="rounded-lg" style="position:relative;padding-top:56.25%;">
+                    <iframe class="rounded-lg" src="https://www.youtube.com/embed/bJ5idn9JYzk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>
+                </div>
+            </p>
+            <p>It was a very productive week, and allowed me to add basically everything else relatively easily, but I didn&#39;t think that at the time, and thought that I&#39;ll have to really tone down my vision - especially since I hadn&#39;t programmed the teleport spell yet.</p>
+            <p><strong>Tip:</strong> Don&#39;t panic.
+                <div class="rounded-lg" style="position:relative;padding-top:56.25%;">
+                    <iframe class="rounded-lg" src="https://www.youtube.com/embed/KW_MqSheQSE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>
+                </div>
+            </p>
+            </p>
+            </p>
+            <h2 id="week-4">Week 4 - Speedrun time</h2>
+            <p>During this week, I tried my best to add as many features as possible in as little time as possible. This was also the first time I started really hard-coding stuff, but it paid off.
+                <div class="rounded-lg" style="position:relative;padding-top:56.25%;">
+                    <iframe class="rounded-lg" src="https://www.youtube.com/embed/bYhJ_hCs5tc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>
+                </div>
+            </p>
+            </p>
+            </p>
+            </p>
+            <p>While making the UI, I thought of adding a Kirby style, always present boss health indicator to force me to make a boss. It worked. In the last four days, I worked on Project Climb a bit too much, neglecting my university homework, to add things like keybindings, four spells and a boss.</p>
+            <p><strong>Tip:</strong> Don&#39;t neglect university homework. It doesn&#39;t end well.
+				<div class="rounded-lg" style="position:relative;padding-top:56.25%;">
+                    <iframe class="rounded-lg" src="https://www.youtube.com/embed/GSQ6BwaShS0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>
+                </div>
+			</p>
+            <hr>
+            <h2 id="conclusion">Conclusion</h2>
+            <p>It was definitely an interesting challenge, and I&#39;m very happy with the end result - I think Project Climb is one the best games I&#39;ve ever made, even without content. I&#39;ve also learned a lot from this. Anyway, now I&#39;m back at working on <a href="https://github.com/GurLad/FrogmanGaiden">Frogman Gaiden</a>, so I&#39;ll have to leave Project Climb. For now.</p>
+
+			<br>
+			<h6><strong>Note: this post-moterm was originally written on 22/06/2021 - I just never got around to publishing it until now (20/06/2022), one year after finishing Project Climb.</strong></h6>
+        </div>
+</body>
+
+</html>
+
+<!--
+# Project Climb Post-mortem
+<br>
+## Intro
+Project Climb was a challenge I've set for myself: make a complete game, from scratch, using a new language & framework, in one month. A complete history of my thoughts during the challenge is available on my [log](https://raw.githubusercontent.com/GurLad/ProjectClimb/main/log.txt): this post-mortem is basically a summary of it with videos.
+___
+## Week 1 - Failing to make a physics engine
+This was my first time using Haxe, and my first time using an object-oriented language besides C#/Java/C++, so it was pretty disorienting at first. I wasted the first few days on making an entity-based physics engine when my game didn't need an entity-based physics engine. I removed that feature by the sixth day.
+// Video of the 4th day
+
+**Tip:** Don't make features you don't need when under a time constraint.
+
+I spent the rest of the week exploring LDtk and making stupid dependency mistakes. By the end of the first week, I had pretty much nothing besides a simple (copy-paste) LDtk renderer and a controllable cube. The future looked bleak.
+// Video of the 7th day
+
+## Week 2 - Actually making a physics engine
+After removing most of the physics code from the previous week, I've began working on implementing tilemap-based physics & collisions. It took me most of the week to get that working, and it had a ton of bugs (there's actually a bug with knockback in the final release, but I made sure the enemies can't trigger it anymore. It was very annoying).
+// Video of the 10th day
+
+**Tip:** Don't make physics engines unless you hate yourself.
+
+Besides the physics stuff, I've begun working on animations & gameplay that week. I've added the snail enemies (which didn't do anything yet at that point) during the last day.
+// Video of the 14th day
+
+## Week 3 - Adding basic gameplay
+During this week, I've added most of the mechanics of the final game, like the spellcasting logic and all Fire spells, taking damage and multiplayer.
+// Video of the 18th day
+
+It was a very productive week, and allowed me to add basically everything else relatively easily, but I didn't think that at the time, and thought that I'll have to really tone down my vision - especially since I hadn't programmed the teleport spell yet.
+
+**Tip:** Don't panic.
+// Video of the 21st day
+
+## Week 4 - Speedrun time
+During this week, I tried my best to add as many features as possible in as little time as possible. This was also the first time I started really hard-coding stuff, but it paid off.
+// Video of the 24th day
+
+While making the UI, I thought of adding a Kirby style, always present boss health indicator to force me to make a boss. It worked. In the last four days, I worked on Project Climb a bit too much, neglecting my university homework, to add things like keybindings, four spells and a boss.
+
+**Tip:** Don't neglect university homework. It doesn't end well.
+// Video of the 28th day
+
+___
+## Conclusion
+It was definitely an interesting challenge, and I'm very happy with the end result - I think Project Climb is one the best games I've ever made, even without content. I've also learned a lot from this. Anyway, now I'm back at working on [Frogman Gaiden](https://github.com/GurLad/FrogmanGaiden), so I'll have to leave Project Climb. For now.
+
+
+-->
