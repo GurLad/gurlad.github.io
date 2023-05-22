@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Portfolio – Gur Ladizhinsky</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css">
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js" integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js" integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ" crossorigin="anonymous"></script>
+	<style>
+		.btn
+		{
+			border-radius: 20px;
+		}
+		.rounded-lg
+		{
+			border-radius: 20px;
+		}
+		.youtube-embed
+		{
+		}
+		.youtube-embed-inner
+		{
+			width:100%;
+			height:100%;
+		}
+		.game-info
+		{
+			font-size:70%;
+			vertical-align: 10%;
+		}
+		.game-row
+		{
+			min-height:275px;
+		}
+		.game-container
+		{
+			border-radius: 20px;
+			padding:20px;
+		}
+		.btn-bd-primary {
+		    --bs-btn-font-weight: 600;
+		    --bs-btn-color: var(--bs-white);
+		    --bs-btn-bg: var(--bd-violet-bg);
+		    --bs-btn-border-color: var(--bd-violet-bg);
+		    --bs-btn-hover-color: var(--bs-white);
+		    --bs-btn-hover-bg: #{shade-color($bd-violet, 10%)};
+		    --bs-btn-hover-border-color: #{shade-color($bd-violet, 10%)};
+		    --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+		    --bs-btn-active-color: var(--bs-btn-hover-color);
+		    --bs-btn-active-bg: #{shade-color($bd-violet, 20%)};
+		    --bs-btn-active-border-color: #{shade-color($bd-violet, 20%)};
+		}
+		.a-btn
+		{
+			color:inherit;
+			text-decoration: none;
+		}
+	</style>
+</head>
+
+<body style="background-color:lavender">
+    <div class="container p-3 border" style="margin-bottom:20px;margin-top:20px;background-color:white;border-radius:20px;">
+        <div style="margin-left:5px;margin-top:5px;margin-right:5px">
+            <h1>Portfolio – Gur Ladizhinsky</h1>
+			<br>
+			Hello, and welcome to my portfolio! I’m a 21 years old CS student, and I’ve been making games as a hobby for around 9 years now. This portfolio will highlight my favourite ones.
+			<br><br>
+			Most of my games were made in Unity, but I’ve experimented with other engines as well – Godot especially is one I’ve grown increasingly fond of. My favourite genres (and thus the ones I have the most experience with) are platformer, strategy, and RPG games, but I’m fine with any genre really (except ultra-violent ones). I love story-based games and modding/romhacking other games.
+			<hr>
+			<h1>Highlights</h1>
+			<br>
+			<span>
+				<div class="container game-container border border-success-subtle" style="background-color: #e8f8f5 ;">
+					<div class="row">
+						<div class="btn-toolbar mb-3" role="toolbar">
+							<h2>Frogman Magmaborn <span class="game-info">(Unity, Mostly Solo, August 2023)</span></h2>
+							<h2>&nbsp;&nbsp;</h2>
+							<div class="btn-group" role="group">
+								<button type="button" class="btn btn-dark"><a href="https://github.com/GurLad/FrogmanMagmaborn" class="a-btn">Source code</a></button>
+								<button type="button" class="btn btn-secondary"><a href="https://store.steampowered.com/app/1768830/Frogman_Magmaborn/" class="a-btn">Steam page</a></button>
+							</div>
+						</div>
+					</div>
+					<div class="row game-row">
+						<div class="col-7">
+							Frogman Magmaborn is my largest project to date – an open-source rogue-like tactical RPG with a story. I’ve made most of the game on my own, but my friend Dan helped with the story, made the conversation backgrounds, and created some portraits (including the high-resolution ones used in the trailer).
+							<br>
+							<br>
+							In addition to the game itself, I’ve also created a pretty extensive modding tool in WinForms called <a href="https://github.com/GurLad/FrogForge">Frog Forge</a>, which I've used as well  to make most of the content in the game.
+						</div>
+						<div class="col rounded-lg youtube-embed">
+							<iframe class="rounded-lg youtube-embed-inner" src="https://www.youtube.com/embed/mAgMIoeOFDE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</div>
+					</div>
+				</div>
+				<br>
+				<div class="container game-container border border-primary-subtle" style="background-color: #f5eef8 ">
+					<div class="row">
+						<div class="btn-toolbar mb-3" role="toolbar">
+							<h2>The Cursed Vest of Soul Harvesting <span class="game-info">(Godot, Solo, January 2023)</span></h2>
+							<h2>&nbsp;&nbsp;</h2>
+							<div class="btn-group" role="group">
+								<button type="button" class="btn btn-dark"><a href="https://github.com/GurLad/HarrVestigious" class="a-btn">Source code</a></button>
+								<button type="button" class="btn btn-warning"><a href="https://ldjam.com/events/ludum-dare/52/the-cursed-vest-of-harvesting/" class="a-btn">Ludum Dare page</a></button>
+							</div>
+						</div>
+					</div>
+					<div class="row game-row">
+						<div class="col-7">
+							This game features the best protagonist I’ve ever made – a mind-controlling vest. It’s a puzzle game where you need to climb a tower by possessing different kinds of monsters. It was made for Ludum Dare 52 Compo.
+							<br>
+							<br>
+							This was my 8th and personal favourite Ludum Dare submission, but some more highlights include:
+							<br>
+							<a href="https://ldjam.com/events/ludum-dare/53/bad-news-inc">Bad News Inc.</a> (LD53 Compo), a game about delivering bad news which won 6th in humour;
+							<br>
+							<a href="https://ldjam.com/events/ludum-dare/50/dillay-and-the-sacred-stones">Dilley and the Sacred Stones</a> (LD50 Compo), a rhythm game and Infinity War parody; and
+							<br>
+							<a href="https://ldjam.com/events/ludum-dare/49/b-a-in-animal-psychology">B.A. in Animal Psychology</a> (LD49 Compo), a game where you talk to animals about their issues and then ride them.
+						</div>
+						<div class="col rounded-lg youtube-embed">
+							<iframe class="rounded-lg youtube-embed-inner" src="https://www.youtube.com/embed/aE4sMJwYQ34" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</div>
+					</div>
+				</div>
+				<br>
+				<div class="container game-container border border-dark-subtle" style="background-color: #eaecee ">
+					<div class="row">
+						<div class="btn-toolbar mb-3" role="toolbar">
+							<h2>Medieval Space Eel Collectors <span class="game-info">(Unity, Team, November 2022)</span></h2>
+							<h2>&nbsp;&nbsp;</h2>
+							<div class="btn-group" role="group">
+								<button type="button" class="btn btn-dark"><a href="https://github.com/GurLad/MedievalSpaceShips" class="a-btn">Source code</a></button>
+								<button type="button" class="btn btn-danger"><a href="https://waackph.itch.io/medieval-space-eel-collector" class="a-btn">itch.io page</a></button>
+							</div>
+						</div>
+					</div>
+					<div class="row game-row">
+						<div class="col-7">
+							During my student exchange semester in Berlin, I participated in two Berlin Mini Jams, where we had to make a game in only 8 hours in teams. This game was my second one, made for the themes of Recycle, Medieval Space Traveling and Electric Eels.
+							<br>
+							<br>
+							I’ve programmed & written the event part of the game and made the music, while my teammates worked on the side-scrolling part and 3D models.
+						</div>
+						<div class="col rounded-lg youtube-embed">
+							<iframe class="rounded-lg youtube-embed-inner" src="https://www.youtube.com/embed/U1YsgunGu-U" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</div>
+					</div>
+				</div>
+				<br>
+				<div class="container game-container border border-info-subtle" style="background-color: #ebf5fb ">
+					<div class="row">
+						<div class="btn-toolbar mb-3" role="toolbar">
+							<h2>Project Climb <span class="game-info">(Heaps.io, Solo, June 2021)</span></h2>
+							<h2>&nbsp;&nbsp;</h2>
+							<div class="btn-group" role="group">
+								<button type="button" class="btn btn-dark"><a href="https://github.com/GurLad/ProjectClimb" class="a-btn">Source code</a></button>
+								<button type="button" class="btn btn-primary"><a href="https://www.disk-o-key.com/PCPM.html" class="a-btn">Post-mortem</a></button>
+							</div>
+						</div>
+					</div>
+					<div class="row game-row">
+						<div class="col-7">
+							After using Unity for 5 years already by this point, I wanted to try out other engines and programming languages, so I set out to study Haxe & Heaps.io while making a game using them, in only one month. The result isn’t spectacular, but I learned a lot from working on it.
+							<br>
+							<br>
+							The game itself is a co-op action-platformer where you have to climb an underground cavern, with a focus on different kinds of spells – the game allows each player to pick one of four elements, each of which features different ground and air attacks (inspired by Super Smash Bros.).
+						</div>
+						<div class="col rounded-lg youtube-embed">
+							<iframe class="rounded-lg youtube-embed-inner" src="https://www.youtube.com/embed/GSQ6BwaShS0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</div>
+					</div>
+				</div>
+				<br>
+				<div class="container game-container border border-warning-subtle" style="background-color: #fef5e7 ">
+					<div class="row">
+						<div class="btn-toolbar mb-3" role="toolbar">
+							<h2>Gravity Banana: Part 1 <span class="game-info">(Unity, Mostly Solo, January 2019)</span></h2>
+							<h2>&nbsp;&nbsp;</h2>
+							<div class="btn-group" role="group">
+								<button type="button" class="btn btn-info"><a href="https://disk-o-key.com/gravityBananaPart1.html" class="a-btn">Disc-O-Key page</a></button>
+							</div>
+						</div>
+					</div>
+					<div class="row game-row">
+						<div class="col-7">
+							This game was actually a remake of the original <a href="https://disk-o-key.com/gravityBanana.html">Gravity Banana</a>, a game I’ve worked on alongside my friend Dan back in 2016. It is an action-platformer game where you play as a gravity-changing banana which throws exploding chilli peppers at pickles. I made most of it, but Dan created all the concept art and he and a few other friends helped with the music and voice acting.
+							<br>
+							<br>
+							While it’s quite old by now (and its code was absolutely terrible), it was the first game I worked on which felt like a “real” game – it features 25 levels (including 5 boss battles), 5 worlds, 4 playable characters, and a co-op mode.
+						</div>
+						<div class="col rounded-lg youtube-embed">
+							<iframe class="rounded-lg youtube-embed-inner" src="https://www.youtube.com/embed/jzQafthFB0I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+						</div>
+					</div>
+				</div>
+			</span>
+			<hr>
+			<h1><a href="www.disk-o-key.com">Disc-O-Key</a></h1>
+			<br>
+			<span>
+				Disc-O-Key is the small game dev team (mostly me and a friend) I make most of my larger projects with. It contains both my earliest works (like Boomby from 2014) and my latest large game (Frogman Magmaborn).
+			</span>
+        </div>
+</body>
+
+</html>
